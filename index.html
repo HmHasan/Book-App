@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <form action="" id="book-form" method="POST">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 " id="show-alert">
+                    <p class="display-4 text-center">Book Management</p>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" class="form-control" name="author" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">#ISBN</label>
+                        <input type="text" id="isbn" class="form-control" name="isbn" placeholder="ISBN">
+                    </div>
+                    <button class="btn btn-info btn-block" type="submit">Submt</button>
+                </div>
+            </div>
+        </form>
+        <!-- Append -->
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
